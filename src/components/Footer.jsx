@@ -12,7 +12,7 @@ const Footer = () => {
 
         <div className="flex gap-6">
           <a 
-            href="mailto:hello@example.com" 
+            href="mailto:bheesham505@gmail.com" 
             className="text-gray-400 hover:text-[var(--color-accent-light)] transition-colors"
             aria-label="Email Me"
           >
@@ -28,7 +28,7 @@ const Footer = () => {
             <FaGithub size={24} />
           </a>
           <a 
-            href="https://linkedin.com" 
+            href="https://www.linkedin.com/in/bheeshamks/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-[#0a66c2] transition-colors"

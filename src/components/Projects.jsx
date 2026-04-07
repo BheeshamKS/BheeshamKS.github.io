@@ -9,16 +9,16 @@ const Projects = () => {
       description: "A Full-Stack AI Orchestration Platform engineered with a secure BYOK architecture supporting multiple LLM providers and sub-second inference latency.",
       tags: ["React", "Supabase", "Vercel"],
       icon: <Cpu size={24} />,
-      githubLink: "#", // Replace with actual link
-      demoLink: "#"    // Replace with actual link
+      githubLink: "https://github.com/BheeshamKS/lumina-ai",
+      demoLink: "https://lumina-ai-bheeshamks.vercel.app"
     },
     {
       title: "Netflix Clone",
       description: "A responsive streaming app that dynamically renders 13,000+ movie records via TMDb API, optimized to reduce page load times by 40%.",
       tags: ["Python (Flask)", "SQLite3", "TMDb API"],
       icon: <Film size={24} />,
-      githubLink: "#",
-      demoLink: "#"
+      githubLink: "https://github.com/BheeshamKS/Netflix-Clone",
+      demoLink: "https://bheeshamks.pythonanywhere.com"
     }
   ];
 

@@ -84,7 +84,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
           >
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/bheeshamks/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.05)] text-gray-400 flex items-center justify-center transition-all hover:bg-[rgba(255,255,255,0.08)] hover:text-white"
@@ -102,7 +102,7 @@ const Hero = () => {
               <FaGithub size={20} />
             </a>
             <a 
-              href="mailto:hello@example.com" 
+              href="mailto:bheesham505@gmail.com" 
               className="w-12 h-12 rounded-full bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.05)] text-gray-400 flex items-center justify-center transition-all hover:bg-[rgba(255,255,255,0.08)] hover:text-white"
               aria-label="Email"
             >

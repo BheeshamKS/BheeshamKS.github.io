@@ -49,7 +49,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="mailto:hello@example.com"
+            href="mailto:bheesham505@gmail.com"
             className="px-5 py-2 rounded-full border border-[var(--color-border)] text-sm font-medium hover:bg-[var(--color-surface)] transition-colors"
           >
             Contact
@@ -87,7 +87,7 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="mailto:hello@example.com"
+                href="mailto:bheesham505@gmail.com"
                 onClick={() => setMobileMenuOpen(false)}
                 className="px-8 py-3 mt-2 rounded-full bg-[var(--color-accent)] text-white font-medium shadow-[0_0_15px_rgba(139,92,246,0.3)]"
               >
