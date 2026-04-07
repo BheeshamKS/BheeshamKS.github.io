@@ -24,7 +24,7 @@ const Hero = () => {
           <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full border border-[rgba(255,255,255,0.05)] bg-[rgba(20,20,20,0.5)] flex items-center justify-center p-2 shadow-2xl">
             <div className="w-full h-full rounded-full overflow-hidden border-4 border-[#121215]">
               <img 
-                src="/profile.jpeg" 
+                src="/profile.jpg" 
                 alt="Bheesham Profile" 
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
