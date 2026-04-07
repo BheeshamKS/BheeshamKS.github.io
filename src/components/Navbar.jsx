@@ -32,7 +32,7 @@ const Navbar = () => {
           : "bg-transparent border-transparent py-5"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 md:px-6 flex justify-between items-center">
+      <div className="w-full px-6 md:px-12 lg:px-24 flex justify-between items-center">
         <a href="#hero" className="text-xl md:text-2xl font-bold tracking-tight text-white hover:text-[var(--color-accent-light)] transition-colors">
           Bheesham Kumar Sajnani
         </a>
