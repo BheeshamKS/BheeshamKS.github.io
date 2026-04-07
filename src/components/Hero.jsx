@@ -103,6 +103,8 @@ const Hero = () => {
             </a>
             <a 
               href="mailto:bheesham505@gmail.com" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.05)] text-gray-400 flex items-center justify-center transition-all hover:bg-[rgba(255,255,255,0.08)] hover:text-white"
               aria-label="Email"
             >

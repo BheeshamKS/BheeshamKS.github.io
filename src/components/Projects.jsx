@@ -65,10 +65,10 @@ const Projects = () => {
                     {project.icon}
                   </div>
                   <div className="flex gap-3">
-                    <a href={project.githubLink} className="text-gray-400 hover:text-white transition-colors" aria-label="GitHub Repository">
+                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="GitHub Repository">
                       <FaGithub size={22} />
                     </a>
-                    <a href={project.demoLink} className="text-gray-400 hover:text-[var(--color-accent-light)] transition-colors" aria-label="Live Demo">
+                    <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[var(--color-accent-light)] transition-colors" aria-label="Live Demo">
                       <ExternalLink size={22} />
                     </a>
                   </div>
