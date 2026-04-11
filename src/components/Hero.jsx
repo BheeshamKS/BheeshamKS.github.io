@@ -154,7 +154,7 @@ const Hero = () => {
       </div>
 
       <motion.div 
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 cursor-pointer z-20"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 cursor-pointer z-20 hidden md:block"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.5, duration: 1, type: "spring" }}

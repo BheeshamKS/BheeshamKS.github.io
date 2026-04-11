@@ -8,6 +8,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import GetInTouch from "./components/GetInTouch";
 import LoadingScreen from "./components/LoadingScreen";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -27,6 +28,7 @@ function App() {
           <Skills />
           <Projects />
           <GetInTouch />
+          <ScrollToTop />
         </div>
       )}
     </>
