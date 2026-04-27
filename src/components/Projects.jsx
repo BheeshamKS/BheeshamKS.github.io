@@ -137,6 +137,24 @@ const Projects = () => {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          className="flex justify-center mt-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <a
+            href="https://github.com/BheeshamKS"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-6 py-3 rounded-full border border-[rgba(255,255,255,0.15)] text-gray-300 hover:text-white hover:border-[var(--color-accent-light)] transition-all duration-300 text-sm font-medium"
+          >
+            <FaGithub size={18} />
+            More Projects
+          </a>
+        </motion.div>
       </div>
     </section>
   );
