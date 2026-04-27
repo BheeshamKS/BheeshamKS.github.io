@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Cpu, Film } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
@@ -9,7 +9,7 @@ const Projects = () => {
       description:
         "A Full-Stack AI Orchestration Platform engineered with a secure BYOK architecture supporting multiple LLM providers and sub-second inference latency.",
       tags: ["React", "Supabase", "Vercel"],
-      icon: <Cpu size={24} />,
+      image: "/images/projects/lumina-ai.jpg",
       githubLink: "https://github.com/BheeshamKS/lumina-ai",
       demoLink: "https://lumina-ai-bheeshamks.vercel.app",
     },
@@ -18,7 +18,7 @@ const Projects = () => {
       description:
         "A responsive streaming app that dynamically renders 13,000+ movie records via TMDb API, optimized to reduce page load times by 40%.",
       tags: ["Python (Flask)", "SQLite3", "TMDb API"],
-      icon: <Film size={24} />,
+      image: "/images/projects/netflix-clone.jpg",
       githubLink: "https://github.com/BheeshamKS/Netflix-Clone",
       demoLink: "https://bheeshamks.pythonanywhere.com",
     },
@@ -27,7 +27,7 @@ const Projects = () => {
       description:
         'A lightweight, automated wrapper for the official Claude Code TUI, just "claude-rotator" in terminal.',
       tags: ["Shell"],
-      icon: <Cpu size={24} />,
+      image: "/images/projects/claude-rotator.jpg",
       githubLink: "https://github.com/BheeshamKS/ClaudeCode-Model-Rotator",
     },
     {
@@ -35,9 +35,9 @@ const Projects = () => {
       description:
         "Built out a complete portfolio site for a client — structured and populated all content including biography, projects, certifications, and personal branding.",
       tags: ["React", "Vite", "Tailwind CSS"],
-      icon: <Film size={24} />,
-      githubLink: "https://github.com/BheeshamKS/Netflix-Clone",
-      demoLink: "https://bheeshamks.pythonanywhere.com",
+      image: "/images/projects/hasaan-portfolio.jpg",
+      githubLink: "https://github.com/hasaankhan175/hasaankhan175.github.io",
+      demoLink: "https://hasaankhan175.github.io/",
     },
   ];
 
@@ -80,50 +80,58 @@ const Projects = () => {
               {/* Subtle hover background sweep */}
               <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-accent-bg)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-              <div className="relative h-full bg-[#0a0a0a] rounded-[22px] p-8 flex flex-col border border-[rgba(255,255,255,0.05)] shadow-2xl">
-                <div className="mb-6 flex justify-between items-start">
-                  <div className="w-14 h-14 rounded-2xl bg-[var(--color-surface)] border border-[var(--color-border)] flex items-center justify-center text-[var(--color-accent-light)] shadow-lg group-hover:scale-110 transition-transform duration-500">
-                    {project.icon}
-                  </div>
-                  <div className="flex gap-3">
-                    <a
-                      href={project.githubLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-white transition-colors"
-                      aria-label="GitHub Repository"
-                    >
-                      <FaGithub size={22} />
-                    </a>
-                    <a
-                      href={project.demoLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-[var(--color-accent-light)] transition-colors"
-                      aria-label="Live Demo"
-                    >
-                      <ExternalLink size={22} />
-                    </a>
-                  </div>
+              <div className="relative h-full bg-[#0a0a0a] rounded-[22px] flex flex-col border border-[rgba(255,255,255,0.05)] shadow-2xl overflow-hidden">
+                <div className="aspect-video w-full overflow-hidden rounded-t-[22px]">
+                  <img
+                    src={project.image}
+                    alt={`${project.title} preview`}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
                 </div>
 
-                <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-[var(--color-accent-light)] transition-colors">
-                  {project.title}
-                </h3>
+                <div className="p-8 flex flex-col flex-grow">
+                  <div className="mb-4 flex justify-between items-start">
+                    <h3 className="text-2xl font-bold text-white group-hover:text-[var(--color-accent-light)] transition-colors">
+                      {project.title}
+                    </h3>
+                    <div className="flex gap-3 shrink-0 ml-4">
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-white transition-colors"
+                        aria-label="GitHub Repository"
+                      >
+                        <FaGithub size={22} />
+                      </a>
+                      {project.demoLink && (
+                        <a
+                          href={project.demoLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-gray-400 hover:text-[var(--color-accent-light)] transition-colors"
+                          aria-label="Live Demo"
+                        >
+                          <ExternalLink size={22} />
+                        </a>
+                      )}
+                    </div>
+                  </div>
 
-                <p className="text-gray-400 leading-relaxed mb-8 flex-grow">
-                  {project.description}
-                </p>
+                  <p className="text-gray-400 leading-relaxed mb-8 flex-grow">
+                    {project.description}
+                  </p>
 
-                <div className="flex flex-wrap gap-2 mt-auto">
-                  {project.tags.map((tag, tagIdx) => (
-                    <span
-                      key={tagIdx}
-                      className="text-xs font-mono font-medium px-3 py-1 bg-[rgba(255,255,255,0.05)] text-gray-300 rounded-full border border-[rgba(255,255,255,0.1)]"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                  <div className="flex flex-wrap gap-2 mt-auto">
+                    {project.tags.map((tag, tagIdx) => (
+                      <span
+                        key={tagIdx}
+                        className="text-xs font-mono font-medium px-3 py-1 bg-[rgba(255,255,255,0.05)] text-gray-300 rounded-full border border-[rgba(255,255,255,0.1)]"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </motion.div>

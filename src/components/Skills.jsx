@@ -23,6 +23,7 @@ const Skills = () => {
       skills: [
         "Git",
         "GitHub",
+        "Shell",
         "Blender 3D",
         "Adobe Photoshop",
         "Adobe Premiere Pro",
