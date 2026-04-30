@@ -31,6 +31,15 @@ const Projects = () => {
       githubLink: "https://github.com/BheeshamKS/ClaudeCode-Model-Rotator",
     },
     {
+      title: "PrismMap",
+      description:
+        "Context-aware prompt builder for Claude. Describe a bug, point it at a repo — PrismMap ranks every file by relevance and assembles a ready-to-paste prompt with only the code that matters.",
+      tags: ["React", "TypeScript", "Vite"],
+      image: "/images/projects/prism-map.jpg",
+      githubLink: "https://github.com/BheeshamKS/PrismMap",
+      demoLink: "https://prism-map.vercel.app",
+    },
+    {
       title: "Hasaan's Portfolio",
       description:
         "Built out a complete portfolio site for a client — structured and populated all content including biography, projects, certifications, and personal branding.",
